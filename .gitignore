@@ -47,8 +47,7 @@ desktop.ini
 *.suo
 *.user
 
-# Sous-dépôts séparés (ont leur propre remote GitHub)
-seo-audit-tool/
+seo-audit-tool/report.md
 
 # Claude
 .claude/

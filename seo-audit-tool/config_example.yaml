@@ -1,0 +1,30 @@
+# Configuration d'audit SEO pour groupedpa.com
+# Utilisez ce fichier avec : python seo_audit.py https://www.groupedpa.com/fr --config config_example.yaml
+
+# Mappings de redirections 301 attendus (ancien -> nouveau)
+# Source : Audit DPA Technique (mars 2026)
+redirect_mappings:
+  /fr/particuliers/auto: /fr/assurances-personnelles/mon-auto
+  /fr/particuliers/habitation: /fr/assurances-personnelles/ma-residence
+  /fr/particuliers/habitation/condo: /fr/assurances-personnelles/ma-residence/mon-condo
+  /fr/particuliers/habitation/maison: /fr/assurances-personnelles/ma-residence/ma-maison
+  /fr/particuliers/habitation/chalet: /fr/assurances-personnelles/ma-residence
+  /fr/particuliers/habitation/travailleur-autonome: /fr/assurances-personnelles/ma-residence/travailleur-autonome
+  /fr/particuliers/loisirs: /fr/assurances-personnelles/vehicules-de-loisirs
+  /fr/particuliers/loisirs/moto: /fr/assurances-personnelles/vehicules-de-loisirs
+  /fr/particuliers/loisirs/vtt: /fr/assurances-personnelles/vehicules-de-loisirs
+  /fr/professionnels: /fr/assurances-entreprises
+  /fr/professionnels/responsabilite-civile: /fr/assurances-entreprises
+  /fr/particuliers/haute-valeur: /fr/assurances-personnelles
+
+# Pages hub qui doivent exister (200) pour la structure du site
+hub_pages:
+  - /fr/assurances-personnelles
+  - /fr/assurances-entreprises
+  - /fr/assurances-personnelles/mon-vehicule
+  - /fr/assurances-personnelles/ma-residence
+
+# Patterns d'anciennes URLs qui ne devraient plus retourner 200
+old_url_patterns:
+  - /fr/particuliers/
+  - /fr/professionnels/
